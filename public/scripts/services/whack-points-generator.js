@@ -19,7 +19,7 @@ export function whackPointsGenerator(whacks = []) {
         const modulusRemainder = whackCount % 4;
         const fours = (whackCount - modulusRemainder) / 4;
         pointsData[4] += fours;
-        pointsData[modulusRemainder] += 1;
+        if (modulusRemainder > 0) pointsData[modulusRemainder] += 1;
         // pointsData.score += (fours * pointsPerWhacks[4]) + (pointsPerWhacks[modulusRemainder] || 0);
       } else if (whackCount > 0) {
         pointsData[whackCount] += 1;

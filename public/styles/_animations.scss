@@ -1,0 +1,77 @@
+@keyframes enterTheDuck {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1) translateX(-200%);
+    opacity: 0;
+  }
+}
+
+@keyframes duckWhackedShake {
+  $delay: 5;
+  @for $i from 0 through $delay {
+    @if $i % 2 == 0 {
+      #{$i * $delay}% {
+        transform: translate(-5px);
+      }
+    } @else {
+      #{$i * $delay}% {
+        transform: translate(5px);
+      }
+    }
+  }
+}
+
+@keyframes printChar {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+$chars: f i n a l SPACE s c o r e COLON SPACE SCORE;
+$count: 0;
+$factor: 0.1;
+.print-chars {
+  @each $char in $chars {
+    .char:nth-of-type(#{$count+1}) {
+      animation-name: printChar;
+      animation-delay: 1.5s;
+      animation-duration: #{$count * $factor}s;
+      animation-fill-mode: both;
+    }
+    $count: $count + 1;
+  }
+}
+
+@keyframes flashLevel {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

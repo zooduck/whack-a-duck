@@ -1,0 +1,236 @@
+@import '_animations';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font: normal 16px calibri, sans-serif;
+}
+
+#root {
+
+}
+
+// =============================================================================
+// APP
+// =============================================================================
+#whack-a-duck {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+
+// =============================================================================
+// HEADER
+// =============================================================================
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .header__score-data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .10);
+
+  .header__score-data__item {
+    display: flex;
+    margin: 0 5px;
+    padding: 0 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .55);
+
+    &.current-score {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    &.time-left {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+    }
+    &.level {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+    }
+    &.--flash {
+      animation: flashLevel 1s;
+    }
+  }
+}
+
+.header .header__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+
+  .header__controls__startCtrl {
+    display: flex;
+    align-self: stretch;
+    button {
+      font-size: 19px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background-color: limegreen;
+      color: #fff;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+
+      &:active {
+        transform: scale(.95);
+      }
+    }
+  }
+
+  .header__controls__ctrls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .header__controls__item {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+
+      &:not(:first-of-type) {
+        margin-top: 10px;
+      }
+
+      label {
+        margin: 0 10px;
+        text-align: right;
+      }
+      input[type=number] {
+        font-size: 19px;
+        width: 60px;
+        cursor: pointer;
+        padding: 2px 5px;
+        background-color: #eee;
+        border: none;
+        outline: none;
+        color: rgba(0, 0, 0, .55);
+      }
+    }
+  }
+}
+
+// =============================================================================
+// GRID
+// =============================================================================
+.grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  user-select: none;
+
+  &.--shake {
+    animation: duckWhackedShake .5s;
+  }
+
+  .grid__row {
+    display: flex;
+    flex-grow: 1;
+  }
+  .grid__row:not(:last-of-type) {
+    border-bottom-width: 0;
+  }
+
+  .grid__square {
+    border-bottom-width: 0;
+    background-color: midnightblue;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 5px;
+  }
+  .grid__square:not(:last-of-type) {
+    border-right-width: 0;
+  }
+  .grid__row:last-of-type .grid__square {
+    border-bottom-width: 5px;
+  }
+
+  .grid__duck {
+    background-image: url('../images/duck.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 100%;
+    align-self: stretch;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+    transform: scale(0, 0);
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+
+    span {
+      display: flex;
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+  }
+  .grid__duck.--active {
+    animation-name: enterTheDuck;
+    animation-duration: 0s;
+  }
+}
+
+// =============================================================================
+// FINAL SCORE BANNER
+// =============================================================================
+.final-score-banner {
+  letter-spacing: 5px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  transform: scale(0, 0);
+  user-select: none;
+
+  .final-score-banner__chars {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .char {
+      font-size: 4.5em;
+      opacity: 0;
+      @media screen and (max-width:600px) {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+.final-score-banner.--active {
+  animation-name: enterTheDuck;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "whackaduck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "luxon": "^1.2.0",
+    "normalize.css": "^8.0.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1",
+    "postcss-modules": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -f dist/*",
+    "start": "npm run clean && parcel public/index.html --open",
+    "build": "npm run clean && parcel build public/index.html --public-url ./ --no-minify"
+  },
+  "author": "",
+  "license": "ISC"
+}

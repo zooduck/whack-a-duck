@@ -98,7 +98,7 @@ class WhackADuck extends React.Component {
     if (this.ctrlSettingsAllowed()) {
       this.setState({
         grid: {
-          rows: rows__NUMBER == 0? 1: rows__NUMBER,
+          rows: rows__NUMBER == 0? 1: rows__NUMBER <= 10? rows__NUMBER : this.defaults.grid.rows,
           columns: this.state.grid.columns
         }
       });
@@ -110,7 +110,7 @@ class WhackADuck extends React.Component {
       this.setState({
         grid: {
           rows: this.state.grid.rows,
-          columns: columns__NUMBER == 0? 1 : columns__NUMBER
+          columns: columns__NUMBER == 0? 1 : columns__NUMBER <= 10? columns__NUMBER : this.defaults.grid.columns
         }
       });
     }

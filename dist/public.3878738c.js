@@ -100,7 +100,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({3:[function(require,module,exports) {
 
-},{"./..\\images\\duck.gif":[["duck.e454fcf4.gif",49],49]}],41:[function(require,module,exports) {
+},{"./..\\images\\duck.gif":[["duck.e454fcf4.gif",29],29]}],55:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -191,7 +191,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],42:[function(require,module,exports) {
+},{}],56:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -245,7 +245,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],44:[function(require,module,exports) {
+},{}],62:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -263,7 +263,7 @@ if ('production' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],43:[function(require,module,exports) {
+},{}],59:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -300,7 +300,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],16:[function(require,module,exports) {
+},{}],31:[function(require,module,exports) {
 /** @license React v16.3.2
  * react.production.min.js
  *
@@ -413,7 +413,7 @@ var W = { Children: { map: function (a, b, e) {
   }, isValidElement: M, version: "16.3.2", __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: { ReactCurrentOwner: I, assign: m } },
     X = Object.freeze({ default: W }),
     Y = X && W || X;module.exports = Y["default"] ? Y["default"] : Y;
-},{"object-assign":41,"fbjs/lib/invariant":42,"fbjs/lib/emptyObject":44,"fbjs/lib/emptyFunction":43}],13:[function(require,module,exports) {
+},{"object-assign":55,"fbjs/lib/invariant":56,"fbjs/lib/emptyObject":62,"fbjs/lib/emptyFunction":59}],20:[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -421,7 +421,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":16}],45:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":31}],57:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -455,7 +455,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],46:[function(require,module,exports) {
+},{}],58:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -492,7 +492,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],47:[function(require,module,exports) {
+},{}],60:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -558,7 +558,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],54:[function(require,module,exports) {
+},{}],75:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -581,7 +581,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],53:[function(require,module,exports) {
+},{}],73:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -604,7 +604,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":54}],48:[function(require,module,exports) {
+},{"./isNode":75}],61:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -642,7 +642,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":53}],18:[function(require,module,exports) {
+},{"./isTextNode":73}],32:[function(require,module,exports) {
 /** @license React v16.3.2
  * react-dom.production.min.js
  *
@@ -890,7 +890,7 @@ var Gg={createPortal:Fg,findDOMNode:function(a){return null==a?null:1===a.nodeTy
 null})}),!0):!1},unstable_createPortal:function(){return Fg.apply(void 0,arguments)},unstable_batchedUpdates:X.batchedUpdates,unstable_deferredUpdates:X.deferredUpdates,flushSync:X.flushSync,unstable_flushControlled:X.flushControlled,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:Ra,EventPluginRegistry:Ca,EventPropagators:kb,ReactControlledComponent:$b,ReactDOMComponentTree:bb,ReactDOMEventListener:$d},unstable_createRoot:function(a,b){return new tg(a,!0,null!=b&&!0===b.hydrate)}};
 X.injectIntoDevTools({findFiberByHostInstance:Ua,bundleType:0,version:"16.3.2",rendererPackageName:"react-dom"});var Hg=Object.freeze({default:Gg}),Ig=Hg&&Gg||Hg;module.exports=Ig["default"]?Ig["default"]:Ig;
 
-},{"fbjs/lib/invariant":42,"react":13,"fbjs/lib/ExecutionEnvironment":45,"object-assign":41,"fbjs/lib/emptyFunction":43,"fbjs/lib/getActiveElement":46,"fbjs/lib/shallowEqual":47,"fbjs/lib/containsNode":48,"fbjs/lib/emptyObject":44}],15:[function(require,module,exports) {
+},{"fbjs/lib/invariant":56,"react":20,"fbjs/lib/ExecutionEnvironment":57,"object-assign":55,"fbjs/lib/emptyFunction":59,"fbjs/lib/getActiveElement":58,"fbjs/lib/shallowEqual":60,"fbjs/lib/containsNode":61,"fbjs/lib/emptyObject":62}],21:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -926,7 +926,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":18}],32:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":32}],64:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1153,7 +1153,7 @@ function normalizeObject(obj, normalizer, ignoreUnknown = false) {
 function timeObject(obj) {
   return pick(obj, ['hour', 'minute', 'second', 'millisecond']);
 }
-},{}],39:[function(require,module,exports) {
+},{}],72:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1335,7 +1335,7 @@ const DATETIME_HUGE_WITH_SECONDS = exports.DATETIME_HUGE_WITH_SECONDS = {
   second: d2,
   timeZoneName: l
 };
-},{}],50:[function(require,module,exports) {
+},{}],76:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1499,7 +1499,7 @@ function formatString(knownFormat) {
       return dateTimeHuge;
   }
 }
-},{"./formats":39,"./util":32}],30:[function(require,module,exports) {
+},{"./formats":72,"./util":64}],63:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1573,7 +1573,7 @@ class ZoneIsAbstractError extends LuxonError {
   }
 }
 exports.ZoneIsAbstractError = ZoneIsAbstractError;
-},{}],24:[function(require,module,exports) {
+},{}],39:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1656,7 +1656,7 @@ class Zone {
   }
 }
 exports.default = Zone; /* eslint no-unused-vars: "off" */
-},{"./errors":30}],29:[function(require,module,exports) {
+},{"./errors":63}],43:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1716,7 +1716,7 @@ class LocalZone extends _zone2.default {
   }
 }
 exports.default = LocalZone;
-},{"../impl/util":32,"../zone":24}],28:[function(require,module,exports) {
+},{"../impl/util":64,"../zone":39}],42:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1848,7 +1848,7 @@ class IANAZone extends _zone2.default {
   }
 }
 exports.default = IANAZone;
-},{"../impl/util":32,"../zone":24}],27:[function(require,module,exports) {
+},{"../impl/util":64,"../zone":39}],41:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1933,7 +1933,7 @@ class FixedOffsetZone extends _zone2.default {
   }
 }
 exports.default = FixedOffsetZone;
-},{"../impl/util":32,"../zone":24}],51:[function(require,module,exports) {
+},{"../impl/util":64,"../zone":39}],78:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1985,7 +1985,7 @@ class InvalidZone extends _zone2.default {
   }
 }
 exports.default = InvalidZone;
-},{"../zone":24}],35:[function(require,module,exports) {
+},{"../zone":39}],68:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2043,7 +2043,7 @@ function normalizeZone(input, defaultZone) {
     return _invalidZone2.default.instance;
   }
 }
-},{"../zone":24,"../zones/localZone":29,"../zones/IANAZone":28,"../zones/fixedOffsetZone":27,"../zones/invalidZone":51,"./util":32}],26:[function(require,module,exports) {
+},{"../zone":39,"../zones/localZone":43,"../zones/IANAZone":42,"../zones/fixedOffsetZone":41,"../zones/invalidZone":78,"./util":64}],40:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2191,7 +2191,7 @@ class Settings {
   }
 }
 exports.default = Settings;
-},{"./zones/localZone":29,"./impl/locale":31,"./impl/zoneUtil":35}],33:[function(require,module,exports) {
+},{"./zones/localZone":43,"./impl/locale":65,"./impl/zoneUtil":68}],66:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2570,7 +2570,7 @@ class Formatter {
   }
 }
 exports.default = Formatter;
-},{"./english":50,"./formats":39,"./util":32}],31:[function(require,module,exports) {
+},{"./english":76,"./formats":72,"./util":64}],65:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2931,7 +2931,7 @@ class Locale {
   }
 }
 exports.default = Locale;
-},{"./util":32,"./english":50,"../settings":26,"../datetime":20,"./formatter":33}],34:[function(require,module,exports) {
+},{"./util":64,"./english":76,"../settings":40,"../datetime":36,"./formatter":66}],67:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3173,7 +3173,7 @@ function parseISODuration(s) {
 function parseSQL(s) {
   return parse(s, [combineRegexes(sqlYmdRegex, sqlTimeExtensionRegex), combineExtractors(extractISOYmd, extractISOTime, extractISOOffset, extractIANAZone)], [combineRegexes(sqlTimeRegex), combineExtractors(extractISOTime, extractISOOffset, extractIANAZone)]);
 }
-},{"./util":32,"./english":50,"../zones/fixedOffsetZone":27,"../zones/IANAZone":28}],22:[function(require,module,exports) {
+},{"./util":64,"./english":76,"../zones/fixedOffsetZone":41,"../zones/IANAZone":42}],35:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3895,7 +3895,7 @@ class Duration {
   }
 }
 exports.default = Duration;
-},{"./impl/util":32,"./impl/locale":31,"./impl/formatter":33,"./impl/regexParser":34,"./settings":26,"./errors":30}],21:[function(require,module,exports) {
+},{"./impl/util":64,"./impl/locale":65,"./impl/formatter":66,"./impl/regexParser":67,"./settings":40,"./errors":63}],37:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4404,7 +4404,7 @@ class Interval {
   }
 }
 exports.default = Interval;
-},{"./datetime":20,"./duration":22,"./settings":26,"./errors":30}],23:[function(require,module,exports) {
+},{"./datetime":36,"./duration":35,"./settings":40,"./errors":63}],38:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4579,7 +4579,7 @@ class Info {
   }
 }
 exports.default = Info;
-},{"./datetime":20,"./settings":26,"./impl/locale":31,"./zones/IANAZone":28,"./impl/util":32}],36:[function(require,module,exports) {
+},{"./datetime":36,"./settings":40,"./impl/locale":65,"./zones/IANAZone":42,"./impl/util":64}],69:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4656,7 +4656,7 @@ function highOrderDiffs(cursor, later, units) {
 
   return [cursor, results, highWater, lowestOrder];
 }
-},{"../duration":22}],37:[function(require,module,exports) {
+},{"../duration":35}],70:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4966,7 +4966,7 @@ function parseFromTokens(locale, input, format) {
   const { result, zone, invalidReason } = explainFromTokens(locale, input, format);
   return [result, zone, invalidReason];
 }
-},{"./util":32,"./formatter":33,"../zones/fixedOffsetZone":27,"../zones/IANAZone":28}],38:[function(require,module,exports) {
+},{"./util":64,"./formatter":66,"../zones/fixedOffsetZone":41,"../zones/IANAZone":42}],71:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -5118,7 +5118,7 @@ function hasInvalidTimeData(obj) {
     return 'millisecond out of range';
   } else return false;
 }
-},{"./util":32}],20:[function(require,module,exports) {
+},{"./util":64}],36:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -6927,7 +6927,7 @@ function friendlyDateTime(dateTimeish) {
     throw new _errors.InvalidArgumentError('Unknown datetime argument');
   }
 }
-},{"./duration":22,"./interval":21,"./settings":26,"./info":23,"./impl/formatter":33,"./zones/fixedOffsetZone":27,"./zones/localZone":29,"./impl/locale":31,"./impl/util":32,"./impl/zoneUtil":35,"./impl/diff":36,"./impl/regexParser":34,"./impl/tokenParser":37,"./impl/conversions":38,"./impl/formats":39,"./errors":30}],14:[function(require,module,exports) {
+},{"./duration":35,"./interval":37,"./settings":40,"./info":38,"./impl/formatter":66,"./zones/fixedOffsetZone":41,"./zones/localZone":43,"./impl/locale":65,"./impl/util":64,"./impl/zoneUtil":68,"./impl/diff":69,"./impl/regexParser":67,"./impl/tokenParser":70,"./impl/conversions":71,"./impl/formats":72,"./errors":63}],22:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -6982,7 +6982,7 @@ exports.FixedOffsetZone = _fixedOffsetZone2.default;
 exports.IANAZone = _IANAZone2.default;
 exports.LocalZone = _localZone2.default;
 exports.Settings = _settings2.default;
-},{"./datetime":20,"./duration":22,"./interval":21,"./info":23,"./zone":24,"./zones/fixedOffsetZone":27,"./zones/IANAZone":28,"./zones/localZone":29,"./settings":26}],6:[function(require,module,exports) {
+},{"./datetime":36,"./duration":35,"./interval":37,"./info":38,"./zone":39,"./zones/fixedOffsetZone":41,"./zones/IANAZone":42,"./zones/localZone":43,"./settings":40}],9:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7089,7 +7089,7 @@ var Controls = exports.Controls = function (_React$Component) {
 
   return Controls;
 }(_react2.default.Component);
-},{"react":13,"react-dom":15}],7:[function(require,module,exports) {
+},{"react":20,"react-dom":21}],10:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7215,7 +7215,7 @@ var ScoreData = exports.ScoreData = function (_React$Component) {
 
   return ScoreData;
 }(_react2.default.Component);
-},{"react":13,"react-dom":15}],8:[function(require,module,exports) {
+},{"react":20,"react-dom":21}],11:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7359,7 +7359,7 @@ var FinalScoreBanner = exports.FinalScoreBanner = function (_React$Component) {
 
   return FinalScoreBanner;
 }(_react2.default.Component);
-},{"react":13,"react-dom":15}],52:[function(require,module,exports) {
+},{"react":20,"react-dom":21}],77:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7443,7 +7443,7 @@ var GridDuck = exports.GridDuck = function (_React$Component) {
 
   return GridDuck;
 }(_react2.default.Component);
-},{"react":13,"react-dom":15}],40:[function(require,module,exports) {
+},{"react":20,"react-dom":21}],74:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7500,7 +7500,7 @@ var GridSquare = exports.GridSquare = function (_React$Component) {
 
   return GridSquare;
 }(_react2.default.Component);
-},{"react":13,"./grid-duck.component":52}],19:[function(require,module,exports) {
+},{"react":20,"./grid-duck.component":77}],53:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7566,7 +7566,7 @@ var GridRow = exports.GridRow = function (_React$Component) {
 
   return GridRow;
 }(_react2.default.Component);
-},{"react":13,"./grid-square.component":40}],9:[function(require,module,exports) {
+},{"react":20,"./grid-square.component":74}],12:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7678,7 +7678,7 @@ var GridRows = exports.GridRows = function (_React$Component) {
 
   return GridRows;
 }(_react2.default.Component);
-},{"react":13,"react-dom":15,"./grid-row.component":19}],10:[function(require,module,exports) {
+},{"react":20,"react-dom":21,"./grid-row.component":53}],13:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7705,7 +7705,7 @@ function randomDuckGenerator() {
     }
   };
 }
-},{}],11:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7742,7 +7742,7 @@ function whackPointsGenerator() {
           var modulusRemainder = whackCount % 4;
           var fours = (whackCount - modulusRemainder) / 4;
           pointsData[4] += fours;
-          pointsData[modulusRemainder] += 1;
+          if (modulusRemainder > 0) pointsData[modulusRemainder] += 1;
           // pointsData.score += (fours * pointsPerWhacks[4]) + (pointsPerWhacks[modulusRemainder] || 0);
         } else if (whackCount > 0) {
           pointsData[whackCount] += 1;
@@ -7772,7 +7772,7 @@ function whackPointsGenerator() {
   }
   return pointsData;
 };
-},{}],12:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7937,7 +7937,7 @@ var WhackADuck = function (_React$Component) {
       if (this.ctrlSettingsAllowed()) {
         this.setState({
           grid: {
-            rows: rows__NUMBER == 0 ? 1 : rows__NUMBER,
+            rows: rows__NUMBER == 0 ? 1 : rows__NUMBER <= 10 ? rows__NUMBER : this.defaults.grid.rows,
             columns: this.state.grid.columns
           }
         });
@@ -7951,7 +7951,7 @@ var WhackADuck = function (_React$Component) {
         this.setState({
           grid: {
             rows: this.state.grid.rows,
-            columns: columns__NUMBER == 0 ? 1 : columns__NUMBER
+            columns: columns__NUMBER == 0 ? 1 : columns__NUMBER <= 10 ? columns__NUMBER : this.defaults.grid.columns
           }
         });
       }
@@ -8048,15 +8048,17 @@ var WhackADuck = function (_React$Component) {
   }, {
     key: 'enterTheDuck',
     value: function enterTheDuck(duck__EL) {
-      var isoTimeLessOffset = _luxon.DateTime.local().toISOTime({ includeOffset: false });
-      console.warn('enterTheDuck() @ ' + isoTimeLessOffset);
-      this.emptyTimeoutStore();
-      this.setState({
-        currentDuckCoords: this.setCurrentDuck().coords,
-        currentDuckId: this.setCurrentDuck().id,
-        currentDuckSpeed: (0, _duckSpeedGenerator.duckSpeedGenerator)(this.state).seconds,
-        duckGateOpen: true
-      });
+      if (this.state.gameInProgress) {
+        var isoTimeLessOffset = _luxon.DateTime.local().toISOTime({ includeOffset: false });
+        console.warn('enterTheDuck() @ ' + isoTimeLessOffset);
+        this.emptyTimeoutStore();
+        this.setState({
+          currentDuckCoords: this.setCurrentDuck().coords,
+          currentDuckId: this.setCurrentDuck().id,
+          currentDuckSpeed: (0, _duckSpeedGenerator.duckSpeedGenerator)(this.state).seconds,
+          duckGateOpen: true
+        });
+      }
     }
   }, {
     key: 'duckWhacked',
@@ -8111,7 +8113,7 @@ var WhackADuck = function (_React$Component) {
           x: -1,
           y: -1
         }
-      });
+      }, this.emptyTimeoutStore);
     }
   }, {
     key: 'startGame',
@@ -8187,11 +8189,11 @@ var WhackADuck = function (_React$Component) {
 }(_react2.default.Component);
 
 _reactDom2.default.render(_react2.default.createElement(WhackADuck, null), document.querySelector('#root'));
-},{"react":13,"react-dom":15,"luxon":14,"./components/controls.component":6,"./components/score-data.component":7,"./components/final-score-banner.component":8,"./components/grid-rows.component":9,"./services/random-duck-generator":10,"./services/whack-points-generator":11,"./services/duck-speed-generator":12}],2:[function(require,module,exports) {
+},{"react":20,"react-dom":21,"luxon":22,"./components/controls.component":9,"./components/score-data.component":10,"./components/final-score-banner.component":11,"./components/grid-rows.component":12,"./services/random-duck-generator":13,"./services/whack-points-generator":14,"./services/duck-speed-generator":15}],2:[function(require,module,exports) {
 'use strict';
 
 require('./styles/main.scss');
 
 require('./scripts/whack-a-duck.app.js');
 },{"./styles/main.scss":3,"./scripts/whack-a-duck.app.js":4}]},{},[2], null)
-//# sourceMappingURL=public.5b6eb366.map
+//# sourceMappingURL=public.c86c96a8.map

@@ -390,6 +390,9 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    @media screen and (max-width: 812px) {
+      .header .header__controls .header__controls__ctrls {
+        display: none; } }
     .header .header__controls .header__controls__ctrls .header__controls__item {
       display: -webkit-box;
       display: -ms-flexbox;

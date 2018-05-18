@@ -34,6 +34,22 @@
             transform: scale(1, 1) translateX(-200%);
     opacity: 0; } }
 
+@-webkit-keyframes enterTheDuck__STATIC {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
+
+@keyframes enterTheDuck__STATIC {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
+
 @-webkit-keyframes duckWhackedShake {
   0% {
     -webkit-transform: translate(-5px);
@@ -502,9 +518,10 @@ body {
       word-break: break-all; }
   .grid .grid__duck.--active {
     -webkit-animation-name: enterTheDuck;
-            animation-name: enterTheDuck;
-    -webkit-animation-duration: 0s;
-            animation-duration: 0s; }
+            animation-name: enterTheDuck; }
+  .grid .grid__duck.--active-STATIC {
+    -webkit-animation-name: enterTheDuck__STATIC;
+            animation-name: enterTheDuck__STATIC; }
 
 .final-score-banner {
   letter-spacing: 5px;

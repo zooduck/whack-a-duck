@@ -100,7 +100,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({3:[function(require,module,exports) {
 
-},{"./..\\images\\duck.gif":[["duck.e454fcf4.gif",29],29]}],55:[function(require,module,exports) {
+},{"./..\\images\\duck.gif":[["duck.e454fcf4.gif",20],20]}],42:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -191,7 +191,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],56:[function(require,module,exports) {
+},{}],43:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -245,7 +245,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],62:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -263,7 +263,7 @@ if ('production' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],59:[function(require,module,exports) {
+},{}],45:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -300,7 +300,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],31:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 /** @license React v16.3.2
  * react.production.min.js
  *
@@ -413,7 +413,7 @@ var W = { Children: { map: function (a, b, e) {
   }, isValidElement: M, version: "16.3.2", __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: { ReactCurrentOwner: I, assign: m } },
     X = Object.freeze({ default: W }),
     Y = X && W || X;module.exports = Y["default"] ? Y["default"] : Y;
-},{"object-assign":55,"fbjs/lib/invariant":56,"fbjs/lib/emptyObject":62,"fbjs/lib/emptyFunction":59}],20:[function(require,module,exports) {
+},{"object-assign":42,"fbjs/lib/invariant":43,"fbjs/lib/emptyObject":44,"fbjs/lib/emptyFunction":45}],19:[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -421,7 +421,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":31}],57:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":21}],46:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -455,7 +455,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],58:[function(require,module,exports) {
+},{}],48:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -492,7 +492,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],60:[function(require,module,exports) {
+},{}],49:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -558,7 +558,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],75:[function(require,module,exports) {
+},{}],54:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -581,7 +581,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],73:[function(require,module,exports) {
+},{}],52:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -604,7 +604,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":75}],61:[function(require,module,exports) {
+},{"./isNode":54}],47:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -642,7 +642,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":73}],32:[function(require,module,exports) {
+},{"./isTextNode":52}],22:[function(require,module,exports) {
 /** @license React v16.3.2
  * react-dom.production.min.js
  *
@@ -890,7 +890,7 @@ var Gg={createPortal:Fg,findDOMNode:function(a){return null==a?null:1===a.nodeTy
 null})}),!0):!1},unstable_createPortal:function(){return Fg.apply(void 0,arguments)},unstable_batchedUpdates:X.batchedUpdates,unstable_deferredUpdates:X.deferredUpdates,flushSync:X.flushSync,unstable_flushControlled:X.flushControlled,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:Ra,EventPluginRegistry:Ca,EventPropagators:kb,ReactControlledComponent:$b,ReactDOMComponentTree:bb,ReactDOMEventListener:$d},unstable_createRoot:function(a,b){return new tg(a,!0,null!=b&&!0===b.hydrate)}};
 X.injectIntoDevTools({findFiberByHostInstance:Ua,bundleType:0,version:"16.3.2",rendererPackageName:"react-dom"});var Hg=Object.freeze({default:Gg}),Ig=Hg&&Gg||Hg;module.exports=Ig["default"]?Ig["default"]:Ig;
 
-},{"fbjs/lib/invariant":56,"react":20,"fbjs/lib/ExecutionEnvironment":57,"object-assign":55,"fbjs/lib/emptyFunction":59,"fbjs/lib/getActiveElement":58,"fbjs/lib/shallowEqual":60,"fbjs/lib/containsNode":61,"fbjs/lib/emptyObject":62}],21:[function(require,module,exports) {
+},{"fbjs/lib/invariant":43,"react":19,"fbjs/lib/ExecutionEnvironment":46,"object-assign":42,"fbjs/lib/emptyFunction":45,"fbjs/lib/getActiveElement":48,"fbjs/lib/shallowEqual":49,"fbjs/lib/containsNode":47,"fbjs/lib/emptyObject":44}],17:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -926,7 +926,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":32}],64:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":22}],33:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1153,7 +1153,7 @@ function normalizeObject(obj, normalizer, ignoreUnknown = false) {
 function timeObject(obj) {
   return pick(obj, ['hour', 'minute', 'second', 'millisecond']);
 }
-},{}],72:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1335,7 +1335,7 @@ const DATETIME_HUGE_WITH_SECONDS = exports.DATETIME_HUGE_WITH_SECONDS = {
   second: d2,
   timeZoneName: l
 };
-},{}],76:[function(require,module,exports) {
+},{}],50:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1499,7 +1499,7 @@ function formatString(knownFormat) {
       return dateTimeHuge;
   }
 }
-},{"./formats":72,"./util":64}],63:[function(require,module,exports) {
+},{"./formats":40,"./util":33}],32:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1573,7 +1573,7 @@ class ZoneIsAbstractError extends LuxonError {
   }
 }
 exports.ZoneIsAbstractError = ZoneIsAbstractError;
-},{}],39:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1656,7 +1656,7 @@ class Zone {
   }
 }
 exports.default = Zone; /* eslint no-unused-vars: "off" */
-},{"./errors":63}],43:[function(require,module,exports) {
+},{"./errors":32}],30:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1716,7 +1716,7 @@ class LocalZone extends _zone2.default {
   }
 }
 exports.default = LocalZone;
-},{"../impl/util":64,"../zone":39}],42:[function(require,module,exports) {
+},{"../impl/util":33,"../zone":27}],31:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1848,7 +1848,7 @@ class IANAZone extends _zone2.default {
   }
 }
 exports.default = IANAZone;
-},{"../impl/util":64,"../zone":39}],41:[function(require,module,exports) {
+},{"../impl/util":33,"../zone":27}],29:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1933,7 +1933,7 @@ class FixedOffsetZone extends _zone2.default {
   }
 }
 exports.default = FixedOffsetZone;
-},{"../impl/util":64,"../zone":39}],78:[function(require,module,exports) {
+},{"../impl/util":33,"../zone":27}],51:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1985,7 +1985,7 @@ class InvalidZone extends _zone2.default {
   }
 }
 exports.default = InvalidZone;
-},{"../zone":39}],68:[function(require,module,exports) {
+},{"../zone":27}],37:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2043,7 +2043,7 @@ function normalizeZone(input, defaultZone) {
     return _invalidZone2.default.instance;
   }
 }
-},{"../zone":39,"../zones/localZone":43,"../zones/IANAZone":42,"../zones/fixedOffsetZone":41,"../zones/invalidZone":78,"./util":64}],40:[function(require,module,exports) {
+},{"../zone":27,"../zones/localZone":30,"../zones/IANAZone":31,"../zones/fixedOffsetZone":29,"../zones/invalidZone":51,"./util":33}],28:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2191,7 +2191,7 @@ class Settings {
   }
 }
 exports.default = Settings;
-},{"./zones/localZone":43,"./impl/locale":65,"./impl/zoneUtil":68}],66:[function(require,module,exports) {
+},{"./zones/localZone":30,"./impl/locale":34,"./impl/zoneUtil":37}],36:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2570,7 +2570,7 @@ class Formatter {
   }
 }
 exports.default = Formatter;
-},{"./english":76,"./formats":72,"./util":64}],65:[function(require,module,exports) {
+},{"./english":50,"./formats":40,"./util":33}],34:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2931,7 +2931,7 @@ class Locale {
   }
 }
 exports.default = Locale;
-},{"./util":64,"./english":76,"../settings":40,"../datetime":36,"./formatter":66}],67:[function(require,module,exports) {
+},{"./util":33,"./english":50,"../settings":28,"../datetime":23,"./formatter":36}],35:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3173,7 +3173,7 @@ function parseISODuration(s) {
 function parseSQL(s) {
   return parse(s, [combineRegexes(sqlYmdRegex, sqlTimeExtensionRegex), combineExtractors(extractISOYmd, extractISOTime, extractISOOffset, extractIANAZone)], [combineRegexes(sqlTimeRegex), combineExtractors(extractISOTime, extractISOOffset, extractIANAZone)]);
 }
-},{"./util":64,"./english":76,"../zones/fixedOffsetZone":41,"../zones/IANAZone":42}],35:[function(require,module,exports) {
+},{"./util":33,"./english":50,"../zones/fixedOffsetZone":29,"../zones/IANAZone":31}],24:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3895,7 +3895,7 @@ class Duration {
   }
 }
 exports.default = Duration;
-},{"./impl/util":64,"./impl/locale":65,"./impl/formatter":66,"./impl/regexParser":67,"./settings":40,"./errors":63}],37:[function(require,module,exports) {
+},{"./impl/util":33,"./impl/locale":34,"./impl/formatter":36,"./impl/regexParser":35,"./settings":28,"./errors":32}],25:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4404,7 +4404,7 @@ class Interval {
   }
 }
 exports.default = Interval;
-},{"./datetime":36,"./duration":35,"./settings":40,"./errors":63}],38:[function(require,module,exports) {
+},{"./datetime":23,"./duration":24,"./settings":28,"./errors":32}],26:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4579,7 +4579,7 @@ class Info {
   }
 }
 exports.default = Info;
-},{"./datetime":36,"./settings":40,"./impl/locale":65,"./zones/IANAZone":42,"./impl/util":64}],69:[function(require,module,exports) {
+},{"./datetime":23,"./settings":28,"./impl/locale":34,"./zones/IANAZone":31,"./impl/util":33}],38:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4656,7 +4656,7 @@ function highOrderDiffs(cursor, later, units) {
 
   return [cursor, results, highWater, lowestOrder];
 }
-},{"../duration":35}],70:[function(require,module,exports) {
+},{"../duration":24}],41:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4966,7 +4966,7 @@ function parseFromTokens(locale, input, format) {
   const { result, zone, invalidReason } = explainFromTokens(locale, input, format);
   return [result, zone, invalidReason];
 }
-},{"./util":64,"./formatter":66,"../zones/fixedOffsetZone":41,"../zones/IANAZone":42}],71:[function(require,module,exports) {
+},{"./util":33,"./formatter":36,"../zones/fixedOffsetZone":29,"../zones/IANAZone":31}],39:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -5118,7 +5118,7 @@ function hasInvalidTimeData(obj) {
     return 'millisecond out of range';
   } else return false;
 }
-},{"./util":64}],36:[function(require,module,exports) {
+},{"./util":33}],23:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -6927,7 +6927,7 @@ function friendlyDateTime(dateTimeish) {
     throw new _errors.InvalidArgumentError('Unknown datetime argument');
   }
 }
-},{"./duration":35,"./interval":37,"./settings":40,"./info":38,"./impl/formatter":66,"./zones/fixedOffsetZone":41,"./zones/localZone":43,"./impl/locale":65,"./impl/util":64,"./impl/zoneUtil":68,"./impl/diff":69,"./impl/regexParser":67,"./impl/tokenParser":70,"./impl/conversions":71,"./impl/formats":72,"./errors":63}],22:[function(require,module,exports) {
+},{"./duration":24,"./interval":25,"./settings":28,"./info":26,"./impl/formatter":36,"./zones/fixedOffsetZone":29,"./zones/localZone":30,"./impl/locale":34,"./impl/util":33,"./impl/zoneUtil":37,"./impl/diff":38,"./impl/regexParser":35,"./impl/tokenParser":41,"./impl/conversions":39,"./impl/formats":40,"./errors":32}],18:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -6982,7 +6982,7 @@ exports.FixedOffsetZone = _fixedOffsetZone2.default;
 exports.IANAZone = _IANAZone2.default;
 exports.LocalZone = _localZone2.default;
 exports.Settings = _settings2.default;
-},{"./datetime":36,"./duration":35,"./interval":37,"./info":38,"./zone":39,"./zones/fixedOffsetZone":41,"./zones/IANAZone":42,"./zones/localZone":43,"./settings":40}],9:[function(require,module,exports) {
+},{"./datetime":23,"./duration":24,"./interval":25,"./info":26,"./zone":27,"./zones/fixedOffsetZone":29,"./zones/IANAZone":31,"./zones/localZone":30,"./settings":28}],9:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7089,7 +7089,7 @@ var Controls = exports.Controls = function (_React$Component) {
 
   return Controls;
 }(_react2.default.Component);
-},{"react":20,"react-dom":21}],10:[function(require,module,exports) {
+},{"react":19,"react-dom":17}],10:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7215,7 +7215,7 @@ var ScoreData = exports.ScoreData = function (_React$Component) {
 
   return ScoreData;
 }(_react2.default.Component);
-},{"react":20,"react-dom":21}],11:[function(require,module,exports) {
+},{"react":19,"react-dom":17}],11:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7359,7 +7359,7 @@ var FinalScoreBanner = exports.FinalScoreBanner = function (_React$Component) {
 
   return FinalScoreBanner;
 }(_react2.default.Component);
-},{"react":20,"react-dom":21}],77:[function(require,module,exports) {
+},{"react":19,"react-dom":17}],56:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7402,22 +7402,34 @@ var GridDuck = exports.GridDuck = function (_React$Component) {
     }
   }, {
     key: 'componentDidUpdate',
-    value: function componentDidUpdate() {
+    value: function componentDidUpdate(nextProps) {
+      var _this2 = this;
+
       this.props.closeDuckGate();
-      var duck = _reactDom2.default.findDOMNode(this.refs.duck);
-      duck.classList.remove('--active');
+      var showDuck = function showDuck(duck__EL) {
+        hideDuck(duck__EL);
+        var activeClassName = '--active';
+        if (_this2.props.duckSpeed < 1) {
+          activeClassName = '--active-STATIC';
+        }
+        duck.style.animationDuration = _this2.props.duckSpeed + 's';
+        setTimeout(function () {
+          duck__EL.classList.add('--active');
+        }.bind(duck__EL), 50);
+      };
+      var hideDuck = function hideDuck(duck__EL) {
+        duck__EL.classList.remove('--active', '--active-STATIC');
+      };
       var isCurrentDuck = function isCurrentDuck(coords, currentDuckCoords) {
         return coords.x == currentDuckCoords.x && coords.y == currentDuckCoords.y;
       };
+      var duck = _reactDom2.default.findDOMNode(this.refs.duck);
+      var stageChanged = nextProps.currentStage != this.props.currentStage;
+      if (stageChanged) {
+        hideDuck(duck);
+      }
       if (isCurrentDuck(this.props.coords, this.props.currentDuckCoords)) {
-        duck.style.animationDuration = this.props.duckSpeed + 's';
-        this.props.setTimeout(function () {
-          duck.classList.add('--active');
-        }.bind(duck), 20);
-        var delay = this.props.duckSpeed * 1000;
-        this.props.setTimeout(function () {
-          this.props.enterTheDuck(duck);
-        }.bind(this), delay);
+        showDuck(duck);
       }
     }
   }, {
@@ -7443,7 +7455,7 @@ var GridDuck = exports.GridDuck = function (_React$Component) {
 
   return GridDuck;
 }(_react2.default.Component);
-},{"react":20,"react-dom":21}],74:[function(require,module,exports) {
+},{"react":19,"react-dom":17}],55:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7500,7 +7512,7 @@ var GridSquare = exports.GridSquare = function (_React$Component) {
 
   return GridSquare;
 }(_react2.default.Component);
-},{"react":20,"./grid-duck.component":77}],53:[function(require,module,exports) {
+},{"react":19,"./grid-duck.component":56}],53:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7566,7 +7578,7 @@ var GridRow = exports.GridRow = function (_React$Component) {
 
   return GridRow;
 }(_react2.default.Component);
-},{"react":20,"./grid-square.component":74}],12:[function(require,module,exports) {
+},{"react":19,"./grid-square.component":55}],12:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7606,7 +7618,7 @@ var GridRows = exports.GridRows = function (_React$Component) {
   _createClass(GridRows, [{
     key: 'shouldComponentUpdate',
     value: function shouldComponentUpdate(nextProps) {
-      var propsToCheck = ['currentDuckId', 'grid'];
+      var propsToCheck = ['currentDuckId', 'grid', 'ducksWhacked'];
       var _iteratorNormalCompletion = true;
       var _didIteratorError = false;
       var _iteratorError = undefined;
@@ -7640,11 +7652,11 @@ var GridRows = exports.GridRows = function (_React$Component) {
     key: 'componentDidUpdate',
     value: function componentDidUpdate(nextProps) {
       var grid = _reactDom2.default.findDOMNode(this.refs.grid);
-      if (this.props.state.ducksWhacked !== nextProps.state.ducksWhacked) {
+      if (nextProps.state.gameInProgress && this.props.state.ducksWhacked !== nextProps.state.ducksWhacked) {
         grid.classList.remove('--shake');
         setTimeout(function () {
           grid.classList.add('--shake');
-        }.bind(grid), 20);
+        }.bind(grid), 50);
       }
     }
   }, {
@@ -7678,7 +7690,7 @@ var GridRows = exports.GridRows = function (_React$Component) {
 
   return GridRows;
 }(_react2.default.Component);
-},{"react":20,"react-dom":21,"./grid-row.component":53}],13:[function(require,module,exports) {
+},{"react":19,"react-dom":17,"./grid-row.component":53}],13:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7917,7 +7929,7 @@ var WhackADuck = function (_React$Component) {
       this.countdownInterval = setInterval(function () {
         this.setState({
           secondsLeft: this.secondsLeft()
-        });
+        }, this.enterTheDuck);
       }.bind(this), 1000);
     }
   }, {
@@ -8047,11 +8059,11 @@ var WhackADuck = function (_React$Component) {
     }
   }, {
     key: 'enterTheDuck',
-    value: function enterTheDuck(duck__EL) {
+    value: function enterTheDuck() {
       if (this.state.gameInProgress) {
         var isoTimeLessOffset = _luxon.DateTime.local().toISOTime({ includeOffset: false });
         console.warn('enterTheDuck() @ ' + isoTimeLessOffset);
-        this.emptyTimeoutStore();
+        // this.emptyTimeoutStore();
         this.setState({
           currentDuckCoords: this.setCurrentDuck().coords,
           currentDuckId: this.setCurrentDuck().id,
@@ -8063,13 +8075,13 @@ var WhackADuck = function (_React$Component) {
   }, {
     key: 'duckWhacked',
     value: function duckWhacked(duck__EL) {
-      duck__EL.classList.remove('--active');
+      duck__EL.classList.remove('--active', '--active-STATIC');
       var updatedWhacks = Array.from(this.state.whacks);
       updatedWhacks[this.state.currentStage] += 1;
       this.setState({
         whacks: updatedWhacks,
         ducksWhacked: this.state.ducksWhacked + 1
-      }, this.enterTheDuck());
+      });
     }
   }, {
     key: 'endGame',
@@ -8153,7 +8165,7 @@ var WhackADuck = function (_React$Component) {
   }, {
     key: 'stageStarted',
     value: function stageStarted() {
-      this.enterTheDuck();
+      //this.enterTheDuck();
       console.log('%cLEVEL ' + this.state.currentStage + ' STARTED', 'color: magenta');
     }
   }, {
@@ -8189,11 +8201,11 @@ var WhackADuck = function (_React$Component) {
 }(_react2.default.Component);
 
 _reactDom2.default.render(_react2.default.createElement(WhackADuck, null), document.querySelector('#root'));
-},{"react":20,"react-dom":21,"luxon":22,"./components/controls.component":9,"./components/score-data.component":10,"./components/final-score-banner.component":11,"./components/grid-rows.component":12,"./services/random-duck-generator":13,"./services/whack-points-generator":14,"./services/duck-speed-generator":15}],2:[function(require,module,exports) {
+},{"react":19,"react-dom":17,"luxon":18,"./components/controls.component":9,"./components/score-data.component":10,"./components/final-score-banner.component":11,"./components/grid-rows.component":12,"./services/random-duck-generator":13,"./services/whack-points-generator":14,"./services/duck-speed-generator":15}],2:[function(require,module,exports) {
 'use strict';
 
 require('./styles/main.scss');
 
 require('./scripts/whack-a-duck.app.js');
 },{"./styles/main.scss":3,"./scripts/whack-a-duck.app.js":4}]},{},[2], null)
-//# sourceMappingURL=public.c86c96a8.map
+//# sourceMappingURL=public.81f85bc7.map

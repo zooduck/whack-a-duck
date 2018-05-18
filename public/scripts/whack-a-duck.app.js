@@ -157,15 +157,17 @@ class WhackADuck extends React.Component {
     }
   }
   enterTheDuck(duck__EL) {
-    const isoTimeLessOffset = DateTime.local().toISOTime({includeOffset: false});
-    console.warn(`enterTheDuck() @ ${isoTimeLessOffset}`);
-    this.emptyTimeoutStore();
-    this.setState({
-      currentDuckCoords: this.setCurrentDuck().coords,
-      currentDuckId: this.setCurrentDuck().id,
-      currentDuckSpeed: duckSpeedGenerator(this.state).seconds,
-      duckGateOpen: true
-    });
+    if (this.state.gameInProgress) {
+      const isoTimeLessOffset = DateTime.local().toISOTime({includeOffset: false});
+      console.warn(`enterTheDuck() @ ${isoTimeLessOffset}`);
+      this.emptyTimeoutStore();
+      this.setState({
+        currentDuckCoords: this.setCurrentDuck().coords,
+        currentDuckId: this.setCurrentDuck().id,
+        currentDuckSpeed: duckSpeedGenerator(this.state).seconds,
+        duckGateOpen: true
+      });
+    }
   }
   duckWhacked(duck__EL) {
     duck__EL.classList.remove('--active');
@@ -212,7 +214,7 @@ class WhackADuck extends React.Component {
         x: -1,
         y: -1
       }
-    });
+    }, this.emptyTimeoutStore);
   }
   startGame() {
     if (!this.state.gameInProgress) {

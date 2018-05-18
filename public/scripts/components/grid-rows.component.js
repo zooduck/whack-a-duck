@@ -6,7 +6,8 @@ export class GridRows extends React.Component {
   shouldComponentUpdate(nextProps) {
     const propsToCheck = [
       'currentDuckId',
-      'grid'
+      'grid',
+      'ducksWhacked'
     ];
     for (let prop of propsToCheck) {
       if (this.props.state[prop] !== nextProps.state[prop]) {
@@ -17,11 +18,11 @@ export class GridRows extends React.Component {
   }
   componentDidUpdate(nextProps) {
     const grid = ReactDOM.findDOMNode(this.refs.grid);
-    if (this.props.state.ducksWhacked !== nextProps.state.ducksWhacked) {
+    if (nextProps.state.gameInProgress && (this.props.state.ducksWhacked !== nextProps.state.ducksWhacked)) {
       grid.classList.remove('--shake');
       setTimeout(function () {
         grid.classList.add('--shake');
-      }.bind(grid), 20);
+      }.bind(grid), 50);
     }
   }
   render() {

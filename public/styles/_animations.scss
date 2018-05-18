@@ -16,6 +16,14 @@
     opacity: 0;
   }
 }
+@keyframes enterTheDuck__STATIC {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 
 @keyframes duckWhackedShake {
   $delay: 5;

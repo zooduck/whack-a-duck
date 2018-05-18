@@ -199,7 +199,9 @@ body {
   }
   .grid__duck.--active {
     animation-name: enterTheDuck;
-    animation-duration: 0s;
+  }
+  .grid__duck.--active-STATIC {
+    animation-name: enterTheDuck__STATIC;
   }
 }
 

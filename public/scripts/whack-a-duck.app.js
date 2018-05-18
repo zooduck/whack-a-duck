@@ -84,7 +84,7 @@ class WhackADuck extends React.Component {
     this.countdownInterval = setInterval(function() {
       this.setState({
         secondsLeft: this.secondsLeft()
-      });
+      }, this.enterTheDuck);
     }.bind(this), 1000);
   }
   endCountdown() {
@@ -156,11 +156,11 @@ class WhackADuck extends React.Component {
       id: randomDuck.id
     }
   }
-  enterTheDuck(duck__EL) {
+  enterTheDuck() {
     if (this.state.gameInProgress) {
       const isoTimeLessOffset = DateTime.local().toISOTime({includeOffset: false});
       console.warn(`enterTheDuck() @ ${isoTimeLessOffset}`);
-      this.emptyTimeoutStore();
+      // this.emptyTimeoutStore();
       this.setState({
         currentDuckCoords: this.setCurrentDuck().coords,
         currentDuckId: this.setCurrentDuck().id,
@@ -170,13 +170,13 @@ class WhackADuck extends React.Component {
     }
   }
   duckWhacked(duck__EL) {
-    duck__EL.classList.remove('--active');
+    duck__EL.classList.remove('--active', '--active-STATIC');
     const updatedWhacks = Array.from(this.state.whacks);
     updatedWhacks[this.state.currentStage] += 1;
     this.setState({
       whacks: updatedWhacks,
       ducksWhacked: this.state.ducksWhacked + 1
-    }, this.enterTheDuck());
+    });
   }
   endGame(stagesInterval) {
     clearInterval(stagesInterval);
@@ -248,7 +248,7 @@ class WhackADuck extends React.Component {
     }.bind(this), delay);
   }
   stageStarted() {
-    this.enterTheDuck();
+    //this.enterTheDuck();
     console.log(`%cLEVEL ${this.state.currentStage} STARTED`, 'color: magenta');
   }
   render() {

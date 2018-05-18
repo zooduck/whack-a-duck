@@ -6,22 +6,32 @@ export class GridDuck extends React.Component {
     const shouldUpdate = nextProps.duckGateOpen || (nextProps.gameInProgress != this.props.gameInProgress);
     return shouldUpdate;
   }
-  componentDidUpdate() {
+  componentDidUpdate(nextProps) {
     this.props.closeDuckGate();
-    const duck = ReactDOM.findDOMNode(this.refs.duck);
-    duck.classList.remove('--active');
+    const showDuck = (duck__EL) => {
+      hideDuck(duck__EL);
+      let activeClassName = '--active';
+      if (this.props.duckSpeed < 1) {
+        activeClassName = '--active-STATIC';
+      }
+      duck.style.animationDuration = `${this.props.duckSpeed}s`;
+      setTimeout(function () {
+        duck__EL.classList.add('--active');
+      }.bind(duck__EL), 50);
+    };
+    const hideDuck = (duck__EL) => {
+      duck__EL.classList.remove('--active', '--active-STATIC');
+    };
     const isCurrentDuck = (coords, currentDuckCoords) => {
       return coords.x == currentDuckCoords.x && coords.y == currentDuckCoords.y;
     }
+    const duck = ReactDOM.findDOMNode(this.refs.duck);
+    const stageChanged = nextProps.currentStage != this.props.currentStage;
+    if (stageChanged) {
+      hideDuck(duck);
+    }
     if (isCurrentDuck(this.props.coords, this.props.currentDuckCoords)) {
-      duck.style.animationDuration = `${this.props.duckSpeed}s`;
-      this.props.setTimeout(function () {
-        duck.classList.add('--active');
-      }.bind(duck), 20);
-      const delay = this.props.duckSpeed * 1000;
-      this.props.setTimeout(function() {
-        this.props.enterTheDuck(duck);
-      }.bind(this), delay);
+      showDuck(duck);
     }
   }
   render() {

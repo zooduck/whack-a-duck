@@ -209,7 +209,6 @@ class WhackADuck extends React.Component {
       report: this.buildGameReport(),
       gameInProgress: false,
       whacks: new Array(this.state.stages.length).fill(0),
-      ducksWhacked: 0,
       currentDuckCoords: {
         x: -1,
         y: -1
@@ -223,6 +222,7 @@ class WhackADuck extends React.Component {
         gameOver: false,
         currentScore: 0,
         currentStage: 0,
+        ducksWhacked: 0,
         gameStartedAt: DateTime.local(),
         gameDuration: (this.state.stages.length * this.state.stages.secondsPerStage),
         currentDuckSpeed: duckSpeedGenerator(this.state).seconds,

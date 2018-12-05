@@ -1,5 +1,5 @@
 # whack-a-duck
-Built as part of a tech challenge from a front-end developer job I interviewed for
+Simple game built using React.
 
 ![alt text](https://github.com/zooduck/screenshots/blob/master/whack-a-duck/whack-a-duck-1.png)
 
